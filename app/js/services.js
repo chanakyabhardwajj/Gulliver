@@ -5,8 +5,7 @@
 
 // Demonstrate how to register services
 // In this case it is a simple value service.
-angular.module('gulliver.services', ['ngResource']).
-    value('version', '0.1')
+angular.module('gulliver.services', ['ngResource'])
     .factory("Transport", ['$resource', function ($resource) {
         return $resource('http://free.rome2rio.com/api/1.2/json/Search/', {key : '9KNFHaKz'}, {
             query : {method : 'GET', params : {}, isArray : false}
@@ -18,7 +17,7 @@ angular.module('gulliver.services', ['ngResource']).
         });
     }])
     .factory("Weather", ['$resource', function ($resource) {
-        return $resource('http://api.openweathermap.org/data/2.5/forecast/daily?cnt=10&mode=json', {}, {
+        return $resource('http://api.openweathermap.org/data/2.5/weather', {units : "metric"}, {
             query: { method: 'JSONP', params: {callback: 'JSON_CALLBACK'}, isArray: false }
         });
     }])

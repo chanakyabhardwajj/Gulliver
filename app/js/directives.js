@@ -26,9 +26,9 @@ angular.module('gulliver.directives', [])
             restrict: 'ECMA',
             replace: false,
             template :  '<div class="raastaHow raastaItem col-xs-12">{{raasta.how.kind | uppercase}} : </div>' +
-                '<em class="raastaBegin raastaItem">{{raasta.begin.name}} <small>{{raasta.begin.kind}}</small></em>' +
-                /*'<i class="fa fa-arrow-right col-xs-1"></i>'*/ 'to' +
-                '<em class="raastaEnd raastaItem">{{raasta.end.name}} <small>{{raasta.end.kind}}</small></em>'
+                '<div><em class="raastaBegin raastaItem">{{raasta.begin.name}} <small>{{raasta.begin.kind}}</small></em>' +
+                /*'<i class="fa fa-arrow-right col-xs-1"></i>'*/ '<i class="raastaMid raastaItem">to</i>' +
+                '<em class="raastaEnd raastaItem">{{raasta.end.name}} <small>{{raasta.end.kind}}</small></em></div>'
 
         };
     });

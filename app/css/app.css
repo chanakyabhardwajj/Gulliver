@@ -81,15 +81,37 @@ h1{
     background: rgba(230,230,230,0.1);
     margin: 10px auto;
     padding: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+#planBox .card:hover{
+    box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+}
+
+#planBox .card .cardTitle{
+    font-size: 30px;
+    background: #fc0;
+    color: #333;
+    cursor: pointer;
+    margin-bottom:10px;
+}
+
+#planBox .card .cardTitle i{
+    font-size: 18px;
+    line-height: 42px
+}
+
+#planBox .card .cardBody{
+
+
 }
 
 
 /* =======WIKIBOXES STYLES =======*/
-.wikiBox .textWikiTitle{
-    font-size: 30px;
-    background: #fc0;
-    color: #333;
-}
+
 
 .wikiBox .textWiki{
     max-height: 200px;
@@ -155,8 +177,14 @@ h1{
     background: rgba(100,100,100,.4);
     border: 1px solid transparent;
     border-radius: 4px;
-    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
-    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+#planBox  .panel:hover {
+    box-shadow: 0 2px 2px rgba(0,0,0,0.5);
 }
 
 #planBox  .panel .routeHeaderItem {
@@ -171,26 +199,37 @@ h1{
 #planBox  .panel .raastaRow{
     background: #333;
     overflow: hidden;
-    margin: 5px 2px;
+    margin: 5px 15px;
     padding: 5px !important;
     cursor: pointer;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+#planBox  .panel .raastaRow:hover{
+    box-shadow: 0 2px 2px rgba(0,0,0,0.5);
 }
 
 #planBox  .panel .raastaRow .raastaHow{
     font-weight: 700;
 }
 
-#planBox  .panel .raastaRow:hover{
-    box-shadow: 2px 2px 2px;
+#planBox  .panel .raastaRow .raastaHow+div{
+    padding: 0 20px;
 }
 
-/* =======WEATHERBOX STYLES =======*/
-#mapBox{
-    /*position: absolute;
-    width:90%;
-    height:90%;
-    top:5%;
-    left:5%;*/
+#planBox  .panel .raastaRow .raastaItem{
+    margin-right: 5px;
+}
+
+#planBox  .panel-body{
+    border:none !important;
+}
+
+/* =======MAPBOX STYLES =======*/
+#map-canvas{
     height:800px;
 }
 
@@ -198,4 +237,12 @@ h1{
 .weatherBox{
     height:200px;
     overflow: scroll;
+}
+
+.weatherBox .textWeather{
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 15px;
+    background: #ebebeb;
+    color: #333;
 }

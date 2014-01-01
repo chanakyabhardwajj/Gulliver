@@ -3,13 +3,13 @@
     <div id="searchBox">
         <div class="row">
             <div class="col-md-5 col-sm-offset-1">
-                <input type="text" class="searchInput input-large" ng-class="{'has-error': !origin}" ng-model="origin" placeholder="from" ui-keypress="{13:'search($event)'}"/>
+                <input type="text" ng-autocomplete class="searchInput input-large" ng-class="{'has-error': !origin}" ng-model="origin.name" details="origindetails" placeholder="from" ui-keypress="{13:'search($event)'}"/>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-5 col-sm-offset-6">
-                <input type="text" class="searchInput input-large" ng-class="{'has-error': !destination}" ng-model="destination" placeholder="to" ui-keypress="{13:'search($event)'}"/>
+                <input type="text" ng-autocomplete class="searchInput input-large" ng-class="{'has-error': !destination}" ng-model="destination.name" details="destinationdetails" placeholder="to" ui-keypress="{13:'search($event)'}"/>
             </div>
         </div>
     </div>

@@ -2,11 +2,12 @@
 
 // Declare app level module which depends on filters, and services
 angular.module('gulliver', [
-        'AngularGM',
         'ui.bootstrap',
         'ui.keypress',
         'ngRoute',
         'ngSanitize',
+        'ngProgress',
+        'ngAutocomplete',
         'gulliver.filters',
         'gulliver.services',
         'gulliver.directives',
