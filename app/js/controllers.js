@@ -4,6 +4,7 @@
 
 angular.module('gulliver.controllers', ['ngAutocomplete'])
     .controller('searchCtrl', ['$scope', '$location', function ($scope, $location) {
+        $scope.isErrored = false;
         $scope.origin = {};
         $scope.origindetails = {};
         $scope.destination = {};
@@ -26,7 +27,8 @@ angular.module('gulliver.controllers', ['ngAutocomplete'])
         });
 
         $scope.search = function ($event) {
-            if ($scope.origin.name && $scope.destination.name) {
+            if ($scope.origin.name && $scope.origin.lat && $scope.origin.lng && $scope.destination.name && $scope.destination.lat && $scope.destination.lng) {
+                $scope.isErrored = false;
                 $location.path('/plan').search({
                     from : $scope.origin.name,
                     to : $scope.destination.name,
@@ -35,6 +37,9 @@ angular.module('gulliver.controllers', ['ngAutocomplete'])
                     p3 : $scope.destination.lat,
                     p4 : $scope.destination.lng
                 });
+            }
+            else{
+                $scope.isErrored = true;
             }
         }
     }])
@@ -255,6 +260,8 @@ angular.module('gulliver.controllers', ['ngAutocomplete'])
             mapMarkers : [],
             mapPolylines : []
         };
+
+        $("#map-canvas").height(window.innerHeight*0.8);
 
         $scope.mapData.mapInstance = new google.maps.Map(document.getElementById($scope.mapData.mapId), $scope.mapData.mapOptions);
 

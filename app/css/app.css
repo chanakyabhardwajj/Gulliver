@@ -20,6 +20,18 @@
     margin-right: auto;
 }
 
+.yellow{
+    color:#fc0;
+}
+
+.white{
+    color: #e4e6e5;
+}
+
+.textcenter{
+    text-align: center;
+}
+
 body{
     padding:0;
     margin:0;
@@ -33,7 +45,8 @@ body{
     font-weight: normal;
     /*overflow: hidden;*/
     -webkit-font-smoothing: antialiased !important;
-    background-image: url("../images/bg1.jpg");
+    background-image: url("../images/bg3.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -50,8 +63,14 @@ h1{
     width: 800px;
     margin: auto;
     padding: 30px;
-    background: rgba(200,200,200,.4);
-    border-radius: 2px;
+    margin-top:20px;
+    background: rgba(20,20,20,.4);
+    border-radius: 5px;
+}
+
+#searchBox .globe{
+    color: #fc0;
+    text-shadow: 2px -3px 3px rgba(100,100,100,1);
 }
 
 #searchBox input{
@@ -59,7 +78,7 @@ h1{
     line-height: 50px;
     vertical-align: middle;
     border-radius: 2px;
-    margin-top: 20px;
+    margin: 20px 10px 10px;
     outline: none !important;
     border:none !important;
     box-shadow: none !important;
@@ -70,6 +89,33 @@ h1{
 
 #searchBox .has-error{
     border-left: 3px solid #ff6762 !important;
+}
+
+#searchBox .searchError{
+    color : #ff4d26;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#searchBox button{
+    margin-top:30px;
+    background-color: #fc0;
+    outline: none !important;
+    border:none !important;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.1);
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    color:#333;
+}
+
+
+#searchBox button:hover, #searchBox button:active{
+    outline: none !important;
+    border:none !important;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+    color: #000;
 }
 
 /* =======PLAN PAGE STYLES =======*/
@@ -230,14 +276,11 @@ h1{
 
 /* =======MAPBOX STYLES =======*/
 #map-canvas{
-    height:800px;
+   /* min-height:500px;*/
 }
 
 /* =======WEATHERBOX STYLES =======*/
-.weatherBox{
-    height:200px;
-    overflow: scroll;
-}
+.weatherBox{}
 
 .weatherBox .textWeather{
     max-height: 200px;
