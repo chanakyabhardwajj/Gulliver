@@ -38,7 +38,7 @@ angular.module('gulliver.controllers', ['ngAutocomplete'])
                     p4 : $scope.destination.lng
                 });
             }
-            else{
+            else {
                 $scope.isErrored = true;
             }
         }
@@ -110,7 +110,6 @@ angular.module('gulliver.controllers', ['ngAutocomplete'])
                 $scope.transportData.routes = data.routes;
                 $scope.transportData.selectedRouteIndex = $scope.transportData.routes[0].routeIndex;
                 $scope.transportData.selectedSegmentIndex = -1;
-                console.log($scope.transportData.routes);
             });
 
             Wiki.query({title : $scope.origin.name}).$promise.then(function (r) {
@@ -154,11 +153,11 @@ angular.module('gulliver.controllers', ['ngAutocomplete'])
                 }
             });
 
-            Weather.query({lat : $scope.origin.lat, lon: $scope.origin.lng}).$promise.then(function(w){
+            Weather.query({lat : $scope.origin.lat, lon : $scope.origin.lng}).$promise.then(function (w) {
                 $scope.origin.weather = w;
             });
 
-            Weather.query({lat : $scope.destination.lat, lon: $scope.destination.lng}).$promise.then(function(w){
+            Weather.query({lat : $scope.destination.lat, lon : $scope.destination.lng}).$promise.then(function (w) {
                 $scope.destination.weather = w;
             });
         };
@@ -261,7 +260,7 @@ angular.module('gulliver.controllers', ['ngAutocomplete'])
             mapPolylines : []
         };
 
-        $("#map-canvas").height(window.innerHeight*0.8);
+        $("#map-canvas").height(window.innerHeight * 0.8);
 
         $scope.mapData.mapInstance = new google.maps.Map(document.getElementById($scope.mapData.mapId), $scope.mapData.mapOptions);
 
