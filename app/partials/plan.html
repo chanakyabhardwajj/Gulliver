@@ -3,12 +3,12 @@
         <div class="col-md-3">
             <div class="row card wikiBox">
                 <div class="col-md-12 cardTitle" ng-click="originCollapsed = !originCollapsed">{{origin.name}} <i class="fa fa-bars pull-right"></i> </div>
-                <div class="cardBody" collapse="originCollapsed"><div class="textWiki" ng-bind-html="origin.wiki"></div></div>
+                <div class="col-md-12 cardBody" collapse="originCollapsed"><div class="textWiki" ng-bind-html="origin.wiki"></div></div>
                 <div class="col-md-12 cardFooter">Source : <a target="_blank" href="http://www.wikipedia.org">Wikipedia</a></div>
             </div>
             <div class="row card transportBox" ng-controller="transportCtrl">
                 <div class="col-md-12 cardTitle" ng-click="routesCollapsed = !routesCollapsed">Routes <i class="fa fa-bars pull-right"></i></div>
-                <div class="cardBody" collapse="routesCollapsed">
+                <div class="col-md-12 cardBody" collapse="routesCollapsed">
                     <accordion close-others="true">
                         <accordion-group ng-repeat="route in transportData.routes" is-open="isopen">
                             <accordion-heading>
@@ -31,7 +31,7 @@
         <div class="col-md-3">
             <div class="row card weatherBox">
                 <div class="col-md-12 cardTitle" ng-click="weatherCollapsed = !weatherCollapsed">Weather <i class="fa fa-bars pull-right"></i> </div>
-                <div class="cardBody" collapse="weatherCollapsed">
+                <div class="col-md-12 cardBody" collapse="weatherCollapsed">
                     <div class="textWeather">
                         <h4>{{origin.name}}</h4>
                         {{origin.weather.weather[0].description}}
@@ -46,7 +46,7 @@
             </div>
             <div class="row card wikiBox">
                 <div class="col-md-12 cardTitle" ng-click="destinationCollapsed = !destinationCollapsed">{{destination.name}} <i class="fa fa-bars pull-right"></i></div>
-                <div class="cardBody" collapse="destinationCollapsed"><div class="textWiki" ng-bind-html="destination.wiki"></div></div>
+                <div class="col-md-12 cardBody" collapse="destinationCollapsed"><div class="textWiki" ng-bind-html="destination.wiki"></div></div>
                 <div class="col-md-12 cardFooter">Source : <a target="_blank" href="http://www.wikipedia.org">Wikipedia</a></div>
             </div>
         </div>
