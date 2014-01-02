@@ -20,21 +20,21 @@
     margin-right: auto;
 }
 
-.yellow{
-    color:#fc0;
+.yellow {
+    color: #fc0;
 }
 
-.white{
+.white {
     color: #e4e6e5;
 }
 
-.textcenter{
+.textcenter {
     text-align: center;
 }
 
-body{
-    padding:0;
-    margin:0;
+body {
+    padding: 0;
+    margin: 0;
     /*background-color: #269abc;*/
     /*background-color: #1fa67a;*/
     /*background-color: #b84d45;*/
@@ -43,14 +43,13 @@ body{
     color: #e4e6e5;
     font-family: "Titillium Web", sans-serif;
     font-weight: normal;
-    /*overflow: hidden;*/
     -webkit-font-smoothing: antialiased !important;
-    background-image: url("../images/bg3.jpg");
+    /*background-image: url("../images/bg3.jpg");*/
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat
 }
 
-h1{
+h1 {
     font-family: "Titillium Web", sans-serif;
     letter-spacing: -2px;
     line-height: 1;
@@ -58,114 +57,107 @@ h1{
     font-weight: 500;
 }
 
-#githubLink{
-    position: absolute;
-    right: 5px;
-    top: 5px;
+#githubLink {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(120, 120, 120, 0.6);
 }
 
 /* =======SEARCH PAGE STYLES =======*/
-#searchBox{
+#searchBox {
     width: 800px;
     margin: auto;
     padding: 30px;
-    margin-top:20px;
-    background: rgba(20,20,20,.4);
+    margin-top: 20px;
+    background: rgba(20, 20, 20, .4);
     border-radius: 5px;
 }
 
-#searchBox .globe{
+#searchBox .globe {
     color: #fc0;
-    text-shadow: 2px -3px 3px rgba(100,100,100,1);
+    text-shadow: 2px -3px 3px rgba(100, 100, 100, 1);
 }
 
-#searchBox input{
+#searchBox input {
     font-size: 30px;
     line-height: 50px;
     vertical-align: middle;
     border-radius: 2px;
     margin: 20px 10px 10px;
     outline: none !important;
-    border:none !important;
+    border: none !important;
     box-shadow: none !important;
     padding-left: 10px;
     background-color: #e4e6e5;
     color: #3a3a3a;
 }
 
-#searchBox .has-error{
+#searchBox .has-error {
     border-left: 3px solid #ff6762 !important;
 }
 
-#searchBox .searchError{
-    color : #ff4d26;
+#searchBox .searchError {
+    color: #ff4d26;
     text-align: center;
     font-weight: 700;
     font-size: 16px;
 }
 
-#searchBox button{
-    margin-top:30px;
+#searchBox button {
+    margin-top: 30px;
     background-color: #fc0;
     outline: none !important;
-    border:none !important;
-    box-shadow: 1px 2px 3px rgba(0,0,0,0.1);
+    border: none !important;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
-    color:#333;
+    color: #333;
 }
 
-
-#searchBox button:hover, #searchBox button:active{
+#searchBox button:hover, #searchBox button:active {
     outline: none !important;
-    border:none !important;
-    box-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+    border: none !important;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
     color: #000;
 }
 
 /* =======PLAN PAGE STYLES =======*/
-#planBox{
-    /*background-color: rgba(243,156,18,0.6);*/
-}
-
-#planBox .card{
-    background: rgba(230,230,230,0.1);
+#planBox .card {
+    background: rgba(230, 230, 230, 0.1);
     margin: 10px auto;
     padding: 5px;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
 }
 
-#planBox .card:hover{
-    box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+#planBox .card:hover {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-#planBox .card .cardTitle{
+#planBox .card .cardTitle {
     font-size: 30px;
     background: #fc0;
     color: #333;
     cursor: pointer;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
-#planBox .card .cardTitle i{
+#planBox .card .cardTitle i {
     font-size: 18px;
     line-height: 42px
 }
 
-#planBox .card .cardFooter{
+#planBox .card .cardFooter {
     background-color: #555;
     margin-top: 5px;
 }
 
-
 /* =======WIKIBOXES STYLES =======*/
 
-
-.wikiBox .textWiki{
+.wikiBox .textWiki {
     max-height: 200px;
     overflow-y: auto;
     padding: 15px;
@@ -173,122 +165,118 @@ h1{
     color: #333;
 }
 
-
-
 /* =======TRANSPORTBOX STYLES =======*/
-.Fly{
+.Fly {
     background-color: #269abc !important;
-    padding:20px !important;
+    padding: 20px !important;
 }
 
-.Train{
+.Train {
     background-color: #b84d45 !important;
-    padding:20px !important;
+    padding: 20px !important;
 }
 
-.Bus{
+.Bus {
     background-color: #aecb36 !important;
-    padding:20px !important;
+    padding: 20px !important;
 }
 
-.Drive{
+.Drive {
     background-color: #34495e !important;
-    padding:20px !important;
+    padding: 20px !important;
 }
 
-.Oops{
+.Oops {
     background-color: transparent !important;
-    padding:20px !important;
+    padding: 20px !important;
 }
 
-#planBox  .panel-group .panel {
+#planBox .panel-group .panel {
     margin-bottom: 0;
     overflow: hidden;
     border-radius: 4px;
 }
 
-#planBox  .panel-default {
+#planBox .panel-default {
     border-color: #fff;
 }
 
-#planBox  .panel-default .panel-heading {
+#planBox .panel-default .panel-heading {
     color: #e4e6e5;
     background-color: transparent !important;
     border: none !important;
-    padding:0px !important;
+    padding: 0px !important;
     cursor: pointer;
 }
 
-#planBox  .panel-default .myPanelHeading{
+#planBox .panel-default .myPanelHeading {
     padding: 20px;
 }
 
-
-#planBox  .panel {
+#planBox .panel {
     margin-bottom: 20px;
-    background: rgba(100,100,100,.4);
+    background: rgba(100, 100, 100, .4);
     border: 1px solid transparent;
     border-radius: 4px;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
 }
 
-#planBox  .panel:hover {
-    box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+#planBox .panel:hover {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-#planBox  .panel .routeHeaderItem {
-    font-size:12px;
+#planBox .panel .routeHeaderItem {
+    font-size: 12px;
     font-weight: 400;
 }
 
-#planBox  .panel .routeName {
+#planBox .panel .routeName {
     font-weight: 700;
 }
 
-#planBox  .panel .raastaRow{
+#planBox .panel .raastaRow {
     background: #333;
     overflow: hidden;
     margin: 5px 15px;
     padding: 5px !important;
     cursor: pointer;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
 }
 
-#planBox  .panel .raastaRow:hover{
-    box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+#planBox .panel .raastaRow:hover {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-#planBox  .panel .raastaRow .raastaHow{
+#planBox .panel .raastaRow .raastaHow {
     font-weight: 700;
 }
 
-#planBox  .panel .raastaRow .raastaHow+div{
+#planBox .panel .raastaRow .raastaHow + div {
     padding: 0 20px;
 }
 
-#planBox  .panel .raastaRow .raastaItem{
+#planBox .panel .raastaRow .raastaItem {
     margin-right: 5px;
 }
 
-#planBox  .panel-body{
-    border:none !important;
+#planBox .panel-body {
+    border: none !important;
 }
 
 /* =======MAPBOX STYLES =======*/
-#map-canvas{
-   /* min-height:500px;*/
-}
+
 
 /* =======WEATHERBOX STYLES =======*/
-.weatherBox{}
+.weatherBox {
+}
 
-.weatherBox .textWeather{
+.weatherBox .textWeather {
     max-height: 200px;
     overflow-y: auto;
     padding: 15px;
