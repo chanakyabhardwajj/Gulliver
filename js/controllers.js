@@ -13,16 +13,16 @@ angular.module('gulliver.controllers', ['ngAutocomplete'])
         $scope.$watch('origindetails', function (details) {
             if (details.name) {
                 $scope.origin.name = details.name;
-                $scope.origin.lat = details.geometry.location.nb;
-                $scope.origin.lng = details.geometry.location.ob;
+                $scope.origin.lat = details.geometry.location.b;
+                $scope.origin.lng = details.geometry.location.d;
             }
         });
 
         $scope.$watch('destinationdetails', function (details) {
             if (details.name) {
                 $scope.destination.name = details.name;
-                $scope.destination.lat = details.geometry.location.nb;
-                $scope.destination.lng = details.geometry.location.ob;
+                $scope.destination.lat = details.geometry.location.b;
+                $scope.destination.lng = details.geometry.location.d;
             }
         });
 
